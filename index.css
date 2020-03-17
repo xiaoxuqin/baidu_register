@@ -1,0 +1,255 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-repeat:no-repeat ;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+#logo{
+    position: fixed;
+    left: 70px;
+    top: 60px;
+    width: 124.4px;
+    height: 40px;
+}
+#logo img{
+    width: 124.4px;
+    height: 40px;
+}
+#title {
+    position: fixed;
+    left: 195px;
+    top: 314px;
+    color: #fff;
+}
+#title h3 {
+    font-size: 54px;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+#title p{
+    font-size: 32px;
+    letter-spacing: 3.81px;
+    font-weight: 300;
+}
+#content {
+    height: 518px;
+    margin-top: -259px;
+    position: absolute;
+    right: 139px;
+    top: 50%;
+    width: 480px;
+    background: rgba(255,255,255,.9);
+    border-radius: 12px;
+    overflow: hidden;
+}
+#contentTop {
+    margin: 30px 0 0 39px;
+}
+#contentTop h3 {
+    font-size: 36px;
+    color: #000;
+    padding-bottom: 4px;
+}
+#contentTop p {
+    font-size: 14px;
+    color: #9B9B9B;
+}
+#contentTop span {
+    color: #2e58ff;
+    cursor: pointer;
+}
+#list {
+    padding-top: 20px;
+    overflow: initial;    
+    position: relative;
+    width: 720px;   
+    float: left;
+}
+.item {
+    display: block;
+    margin-bottom: 20px; 
+    position: relative;
+    clear: both; 
+    zoom: 1;
+}
+.item label {
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: right;
+    width: 82px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+    font-weight: 200;
+    display: block;
+    margin-bottom: 20px;
+    float: left;
+}
+.item_message {
+    padding: 11px 10px;
+    max-height: 40px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 321px;
+    color: #000;
+    display: block;
+    position: relative;
+    float: left;
+    height: 16px;
+    transition: .3s;
+}
+.itemlast {
+    margin-bottom: 0;
+    position: relative;
+    clear: both;zoom: 1;
+}
+.itemlast label{
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: right;
+    width: 82px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+    font-weight: 200;
+    display: block;
+    float: left;
+}  
+#code {
+    width: 184px;
+    margin-right: 9px;
+    padding: 11px 10px;
+    max-height: 40px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;    
+    display: block;
+    position: relative;
+    float: left;
+    height: 16px;
+    transition: .3s;
+}
+#getcode {
+    width: 126px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    font-size: 12px;
+    color: #333;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 38px; 
+    font-weight: 400;
+    float: left;
+    margin-right: 10px;
+    display: block;
+    cursor: pointer;
+}
+#regist {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    left: 41px;
+    position: relative;
+    clear: both;
+    zoom: 1;
+    background-color: #BDCEFC;
+    border-radius: 25px;
+    float: left;
+    width: 399px;
+    display: block;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    border:0;
+    text-align: center;
+    line-height: 32px;
+    font-family: Arial, 宋体;
+    margin-bottom: 10px;
+    outline: none;      
+}
+#pact {
+    margin-bottom: 20px;
+    margin-left: 41px;
+    width: 399px;
+    text-align: center;position: relative;
+    clear: both;zoom: 1;
+}     
+#pact input {
+    position: relative;
+    top: -2px;    
+    vertical-align: middle;
+    font-size: 100%;
+}   
+#pact label {
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+}    
+.pacta {
+    color: #2E58FF;
+    text-decoration: none;
+    font-size: 12px;
+}  
+label{
+    cursor: default;
+}
+#help {
+    position: fixed;
+    left: 70px;
+    bottom: 57px;
+    font-size: 14px;
+    color: #fff;
+}
+.mod-new-reg-help a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+#helpa {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('https://passport.baidu.com/static/passpc-account/img/reg/service-2x.png') no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 3px;
+}
+.mod-new-reg-help span{
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    filter: alpha(opacity=78);
+    opacity: .78;
+    margin: 0 12px 0 13px;
+    background: #fff;
+    position: relative;
+    top: 1px;
+}
+#bai{
+    opacity: .54;
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+    padding-left: 30px;
+}
+.message {
+    color: red;
+    font-size: 12px;
+    margin-top: 40px;
+}
+#username-validation-message {
+    color: red;
+    font-size: 12px;
+}

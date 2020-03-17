@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册百度账号</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body background="https://passport.baidu.com/static/passpc-account/img/reg_bg_min.jpg">
+    <div id="logo">
+        <img src='https://passport.baidu.com/static/passpc-account/img/baidu.png'/>
+    </div>
+    <div id="title">
+        <h3>用科技</h3>
+        <p>让复杂的世界更简单</p>
+    </div>
+
+    <div id="content">
+        <div id="contentTop">
+            <h3>欢迎注册</h3>
+            <p>
+                已有账号？
+                <span>登录</span>
+            </p>
+        </div>
+        <div id="list">
+            <form>
+                <p class="item" style="height: 20px;">
+                    <label for="username">用户名</label>
+                    <input class="item_message" id="username" type="text" name="userName" autocomplete="off" value="" placeholder="请设置用户名">
+                    <div id="username-validation-message"></div>
+                </p>
+                
+                <p class="item">
+                    <label for="username">手机号</label>
+                    <input class="item_message" id="tel" type="text" name="phone" maxlength="11" autocomplete="off" value="" placeholder="可用于登录和找回密码">
+                    <div class="message" id="tel-validation-message"></div>
+                </p>
+                
+                <p class="item">
+                    <label for="username">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                    <input class="item_message" id="pwd" type="password" name="password" autocomplete="off" value="" placeholder="请设置登录密码">
+                    <div class="message" id="pwd-validation-message"></div>
+                </p>
+                <p class="itemlast">
+                    <label for="username">验证码</label>
+                    <input id="code" type="text" name="verfyCode" autocomplete="off" maxlength="6" placeholder="请输入验证码">
+                    <input id="getcode" type="button" value="获取验证码" autocomplete="off"/>
+                    <div id="code-validation-message"></div>
+                </p>
+                <input id="regist" type="button" value="注册"/>
+                <p id="pact">
+                    <input name="isAgree" type="checkbox" checked autocomplete="off" />
+                    <label for="isAgree">阅读并接受</label>
+                    <a class="pacta" target="_blank" href="http://passport.baidu.com/static/passpc-account/html/protocal.html">
+                        《百度用户协议》
+                    </a>及
+                    <a class="pacta" target="_blank" href="http://privacy.baidu.com/mdetail?id=288">
+                        《百度隐私权保护声明》
+                    </a>
+                    <a><span id="isAgreeError" ></span></a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="help">
+    <span class="mod-new-reg-help">
+        <a href="https://passport.baidu.com/v2/?ucenterfeedback#reg" target="_blank">帮助中心</a>
+        <span></span>
+        <a id="helpa" href="https://zhiqiu.baidu.com/imcswebchat/roulette/in?id=48721&amp;token=1nnbs7op4ocsr68143oamrjq9c4eoin2&amp;domainID=pass&amp;type=2"></a>
+    </span>
+    <span id="bai">2020&nbsp;©Baidu</span>
+    </div>
+
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
