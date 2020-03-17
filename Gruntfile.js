@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                 collapseWhitespace: true
             },
             files:{
-                src: 'dist/index.html',
+                src: 'index.html',
                 dest: 'dist/index.html'
             }
         },
