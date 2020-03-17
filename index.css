@@ -63,7 +63,7 @@ body{
     cursor: pointer;
 }
 #list {
-    padding-top: 20px;
+    padding-top: 40px;
     overflow: initial;    
     position: relative;
     width: 720px;   
@@ -252,4 +252,46 @@ label{
 #username-validation-message {
     color: red;
     font-size: 12px;
+}
+#tip1 {
+    color: white;
+    background-color: black;
+    width:300px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+     font-size: 12px;
+    padding: 0 10px ; 
+    position: absolute;
+    left: 100px; 
+    top: 5px;
+    display: none;
+}
+#mark {
+    width: 9px;
+    height: 14px;
+    border: 1px gray solid;
+    position: absolute;
+    top: 170px;
+    left: 410px;
+    border-radius: 50%;
+    padding-left: 6px;
+    padding-top: 1px;
+    font-size: 10px;
+    font-weight: bolder;
+    color: gray;
+}
+#tip2 {   
+    color: white;
+    background-color: black;
+    width:250px;
+    height: 55px;
+    line-height: 18px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 10px ; 
+    position: absolute;
+    left: 170px; 
+    top: 90px;
+    display: none;
 }

@@ -4,14 +4,22 @@ var $username = $('#username'),
     $getcode = $('#getcode'),
     $code = $('#code'),
     $tel_message = $('#tel-validation-message'),
-    $regist = $('#regist');
+    $regist = $('#regist'),
+    $tip1 = $('#tip1'),
+    $tip2 = $('#tip2'),
+    $mark = $('#mark');
 var $pwdclick = 0;
 
 // username
 $username.focusout(function () {
+    $tip1.css('display','none');
     if (!validate('#username')) {
+        $tip1.css('display','none');
         $username.select();
     }
+})
+$username.focus(function () {
+    $tip1.css('display','block');
 })
 // tel
 $tel.focusout(function () {
@@ -22,10 +30,25 @@ $tel.focusout(function () {
 // password
 $pwd.focusout(function () {
     $pwdclick++;
+    $tip2.css('display','none');
     if (!validate('#pwd')) {
+        $tip2.css('display','none');
         $pwd.select();
     }
 })
+$pwd.focus(function(){
+    $tip2.css('display','block');
+})
+$mark.mouseover(function(){
+    $mark.css('color','#2E58FF');
+    $mark.css('border','1px #2E58FF solid');
+    $tip2.css('display','block');
+})
+$mark.mouseout(function(){
+    $mark.css('color','gray');
+    $mark.css('border','1px gray solid');
+})
+
 
 function validate(field) {
     var $data = $(field);
@@ -62,9 +85,7 @@ function validate(field) {
     return true;
 }
 
-/**
- * 点击发送验证码效果
- */
+// 点击发送验证码效果
 $getcode.click(function () {
     if (!$tel.val()) {
         $tel_message.html('请您输入手机号');

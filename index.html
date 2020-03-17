@@ -25,6 +25,7 @@
         </div>
         <div id="list">
             <form>
+                <p id="tip1">设置后不可更改，中英文均可，最长14个英文或7个汉字</p>
                 <p class="item" style="height: 20px;">
                     <label for="username">用户名</label>
                     <input class="item_message" id="username" type="text" name="userName" autocomplete="off" value="" placeholder="请设置用户名">
@@ -36,10 +37,15 @@
                     <input class="item_message" id="tel" type="text" name="phone" maxlength="11" autocomplete="off" value="" placeholder="可用于登录和找回密码">
                     <div class="message" id="tel-validation-message"></div>
                 </p>
-                
+                <div id="tip2">
+                    <p>长度为8~14个字符</p>
+                    <p>字母/数字以及标点符号至少包含2种</p>
+                    <p>不允许有空格、中文</p>
+                </div>
                 <p class="item">
                     <label for="username">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
                     <input class="item_message" id="pwd" type="password" name="password" autocomplete="off" value="" placeholder="请设置登录密码">
+                    <div id="mark">!</div>
                     <div class="message" id="pwd-validation-message"></div>
                 </p>
                 <p class="itemlast">
