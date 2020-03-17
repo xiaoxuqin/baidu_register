@@ -10,7 +10,7 @@ var $username = $('#username'),
     $mark = $('#mark');
 var $pwdclick = 0;
 
-// username
+/**username */
 $username.focusout(function () {
     $tip1.css('display','none');
     if (!validate('#username')) {
@@ -21,13 +21,13 @@ $username.focusout(function () {
 $username.focus(function () {
     $tip1.css('display','block');
 })
-// tel
+/**tel */
 $tel.focusout(function () {
     if (!validate('#tel')) {
         $tel.select();
     }
 })
-// password
+/**password */
 $pwd.focusout(function () {
     $pwdclick++;
     $tip2.css('display','none');
@@ -48,7 +48,6 @@ $mark.mouseout(function(){
     $mark.css('color','gray');
     $mark.css('border','1px gray solid');
 })
-
 
 function validate(field) {
     var $data = $(field);
@@ -72,20 +71,26 @@ function validate(field) {
             $msg.html('手机号码格式不正确');
             return false;
         }
+        // /^.*(?=.{6,})(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$/
     }
     if (field === '#pwd') {
         // 不为空且不匹配   或   focusout后仍为空
-        if ( (!/^(?![\d]+$)(?![a-zA-Z]+$)(?![!#$%^&*]+$)[\da-zA-Z!#$%^&*]{8,14}$/.test($data.val()) && $data.val()) 
+        if ((!/^(?![\d]+$) (?![a-zA-Z]+$) (?![!#$%^&*]+$) [\da-zA-Z!#$%^&*]{8,14}$/.test($data.val()) && $data.val()) 
             || (!$data.val() && $pwdclick) ) {
             $msg.html('密码设置不符合要求');
             return false;
         }
+        // 长度为8~14个字符
+        // 字母/数字以及标点符号至少包含2种
+        // 不允许有空格、中文
+        // 有空格或中文，
+        /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z\\W]{8,14}$/
     }
     $msg.html('');
     return true;
 }
 
-// 点击发送验证码效果
+/**点击发送验证码效果 */
 $getcode.click(function () {
     if (!$tel.val()) {
         $tel_message.html('请您输入手机号');
@@ -109,7 +114,7 @@ $getcode.click(function () {
     }
 });
 
-// register
+/**register */
 document.addEventListener("keyup", function () {
     if ($username.val() && $tel.val() && $pwd.val() && $code.val()) {
         $regist.css("background-color", "#2E58FF");
