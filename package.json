@@ -14,15 +14,15 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xiaoxuqin/baidu_register.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "xiaoxuqin",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xiaoxuqin/baidu_register/issues"
   },
